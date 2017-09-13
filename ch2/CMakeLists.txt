@@ -14,7 +14,7 @@ add_executable( helloSLAM helloSLAM.cpp )
 # 添加一个库
 add_library( hello libHelloSLAM.cpp )
 # 共享库
-add_library( hello_shared SHARED libHelloSLAM.cpp )
+add_library( hello_shared libHelloSLAM.cpp )
 
 add_executable( useHello useHello.cpp )
 # 将库文件链接到可执行程序上
