@@ -2,6 +2,7 @@ cmake_minimum_required( VERSION 2.8 )
 project( useSophus )
 
 # 为使用 sophus，您需要使用find_package命令找到它
+INCLUDE_DIRECTORIES( c:/all_libs/eigen/include/eigen3/ )
 find_package( Sophus REQUIRED )
 include_directories( ${Sophus_INCLUDE_DIRS} )
 
